@@ -80,7 +80,7 @@ class controller:
             img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
             img=cv2.Canny(img,self.cannySliderMin.slide*self.cannySliderMin.multiplier,self.cannySliderMax.slide*self.cannySliderMax.multiplier)
             img=cv2.cvtColor(img,cv2.COLOR_GRAY2RGB)
-        self.world.screen.blit(cvimage_to_pygame(img),(200,400))
+        self.world.screen.blit(cvimage_to_pygame(img),(200,300))
         
         self.rotateiondropdown.draw()
         self.cameradropdown.draw()
